@@ -1,0 +1,63 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+body{
+    background-color: #eaedef;
+}
+.navbar{
+    box-shadow: rgb(204 204 204) 0px 2px 3px;
+}
+th{
+    font-size: 10px;
+}
+td{
+    font-size: 10px;
+}
+.add_btn
+{
+    background-color: #45a74f;
+    border: #45a74f;
+    color: white;
+}
+
+.add_btn:hover
+{
+    background-color: #398841;
+    border: #398841;
+    color: white;
+}
+
+.add_btn:active
+{
+    background-color: white;
+    border: white;
+    color: black;
+}
+.add_btn2
+{
+    background-color: white;
+    border: white;
+    color: black;
+}
+
+.add_btn2:hover
+{
+    background-color: white;
+    border: white;
+    color: black;
+}
+
+.add_btn2:active
+{
+    background-color: white;
+    border: white;
+    color: black;
+}
+.add_btn3{
+    border: none;
+    background-color: #eaedef;
+}
+section{
+   margin-top: 80px;
+}

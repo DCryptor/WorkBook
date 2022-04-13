@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% block button_1 %}active{% endblock %}
+{% block main%}
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action" style="background-color: #0d6efd;" aria-current="true">
+    <h5 class="mb-1" style="color: white;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Добавить ребенка</h5>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action;" data-bs-toggle="modal" data-bs-target="#editModal" data-bs-whatever="@getbootstrap" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Солдатов Николай Николаевич</h5>
+      <small class="">Редактировать</small>
+    </div>
+    <p class="mb-1">Школа: МБУДО "Вилюйская СОШ №1 им.Г.И.Чиряева"</p>
+    <p class="mb-1">Дата рождения: 25.06.2010</p>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Крылатов Кэскил Романович</h5>
+      <small class="">Редактировать</small>
+    </div>
+    <p class="mb-1">Школа: МБУДО "Вилюйская СОШ №3 им.Г.C.Степанова"</p>
+    <p class="mb-1">Дата рождения: 25.06.2010</p>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Федоров Лев Иванович</h5>
+      <small class="">Редактировать</small>
+    </div>
+    <p class="mb-1">Школа: МБУДО "Вилюйская СОШ №1 им.Г.И.Чиряева"</p>
+    <p class="mb-1">Дата рождения: 25.06.2010</p>
+  </a>
+</div>
+<!--Dialog menu-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Добавить ребенка</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Фамилия:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Имя:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Отчество:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Дата рождения:</label>
+            <input type="date" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Школа:</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Выберите школу...</option>
+              <option value="1">МБОУ "Вилюйская НОШ №1"</option>
+              <option value="2">МБОУ "Вилюйская ВСОШ №1 им.Г.И.Чиряева"</option>
+              <option value="3">МБОУ "Вилюйская ВСОШ №2 им.Г.С.Донского"</option>
+              <option value="4">МБОУ "Вилюйская ВСОШ №3 им.Н.С.Степанова"</option>
+            </select>
+          </div>
+          <!--div class="mb-3">
+            <label for="message-text" class="col-form-label">Описание:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div-->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary">Добавить</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--add Dialog menu-->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Добавить</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Редактировать</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Добавить участие на мероприятие</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Дата участия:</label>
+                <input type="date" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Название мероприятия:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Описание:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Зарузить файлы</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+            <button type="button" class="btn btn-primary">Удалить</button>
+            <button type="button" class="btn btn-primary">Добавить</button>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Редактировать</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Список участия:</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Выберите мероприятие...</option>
+                  <option value="1">Хоровод дружбы</option>
+                  <option value="2">Сияние Севера</option>
+                  <option value="3">Kosmostar</option>
+                  <option value="4">Улусный конкурс "Саха-КВН"</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Дата участия:</label>
+                <input type="date" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Название мероприятия:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Описание:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Зарузить файлы</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+            <button type="button" class="btn btn-primary">Удалить</button>
+            <button type="button" class="btn btn-primary">Сохранить</button>
+          </div>
+        </div>
+      </div>
+      <!---->
+    </div>
+  </div>
+</div>
+{% endblock %}

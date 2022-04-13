@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block button_3 %}active{% endblock %}
+{% block main%}
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action" style="background-color: #0d6efd;" aria-current="true">
+    <h5 class="mb-1" style="color: white;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Список мероприятий</h5>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">ГИС Хакатон 2022</h5>
+      <small class="">3 часа назад</small>
+    </div>
+    <p class="mb-1">Улусный конкурс с музыкальными номерами</p>
+    <p class="mb-1">Дата проведения: 25.06.2010</p>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">День космонавтики</h5>
+      <small class="">неделю назад</small>
+    </div>
+    <p class="mb-1">15-16 марта 2022г проведен улусный турнир по русским шашкам среди школьников начальных классов.</p>
+    <p class="mb-1">Дата проведения: 25.06.2010</p>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Битва роботов</h5>
+      <small class="">месяц назад</small>
+    </div>
+    <p class="mb-1">поддержка развития детского движения и программ «Российского движения школьников» в Вилюйском улусе.</p>
+    <p class="mb-1">Дата проведения: 25.06.2010</p>
+  </a>
+</div>
+{% endblock %}
